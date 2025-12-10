@@ -135,3 +135,40 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialisation
     updateGallery();
 });
+
+// --- LOGIQUE TEXTE DYNAMIQUE (Hero) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const dynamicElement = document.getElementById('dynamic-text');
+    
+    // LISTE DES MOTS À FAIRE DÉFILER (Modifiable ici pour ton équipe marketing)
+    const phrases = [
+        "d'organiser",
+        "de gagner en efficacité",
+        "de gérer les événements",
+        "de fédérer vos équipes" 
+    ];
+
+    let phraseIndex = 0;
+
+    // Fonction pour changer le texte
+    function rotateText() {
+        // 1. On commence par cacher le texte (ajout de la classe CSS)
+        dynamicElement.classList.add('hide-text');
+
+        // 2. On attend la fin de l'animation de disparition (0.5s = 500ms)
+        setTimeout(() => {
+            // On change l'index pour prendre le mot suivant
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            
+            // On met à jour le texte dans le HTML
+            dynamicElement.textContent = phrases[phraseIndex];
+            
+            // 3. On réaffiche le texte (retrait de la classe CSS)
+            dynamicElement.classList.remove('hide-text');
+            
+        }, 500); // Doit correspondre à la durée du 'transition' dans le CSS
+    }
+
+    // Lancer le changement toutes les 2.5 secondes (2500ms)
+    setInterval(rotateText, 2500);
+});

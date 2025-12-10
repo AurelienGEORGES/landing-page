@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bénévolat Simple - La gestion d'association réinventée</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poppins:wght@300;500;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
+
 <body>
 
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">NomDeL'App</div>
             <ul class="nav-links">
-                <li><a href="#hero">Accueil</a></li>
                 <li><a href="#probleme">Le Problème</a></li>
                 <li><a href="#solution">La Solution</a></li>
                 <li><a href="#demo">Démonstration</a></li>
@@ -25,19 +28,24 @@
         </div>
     </nav>
 
-    <header id="hero" class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Fini l'enfer d'Excel.<br>Retrouvez le plaisir d'organiser.</h1>
-                <p>La première plateforme conçue pour les petites associations qui veulent gérer leurs bénévoles sans devenir des experts en informatique. Simple. Humain. Efficace.</p>
-                <div class="cta-group">
-                    <a href="#contact" class="btn btn-primary">Je veux tester</a>
-                    <a href="#demo" class="btn btn-secondary">Voir la vidéo</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <div class="img-placeholder" id="ph-hero">
-                    <p><strong>[Image Nano Banana]</strong><br>Scène chaleureuse : Un responsable d'asso souriant avec une tablette, ambiance conviviale.</p>
+    <header class="hero" id="hero-section"
+        style="height: 900px; display: flex; align-items: flex-start; position: relative; background-color: #2E7D32;">
+        <div class="container hero-container" style="width: 100%;">
+            <div
+                style="margin-left: auto; text-align: right; max-width: 800px; padding: 10px 20px 20px 20px; margin-right: 0px;">
+                <div class="hero-text">
+                    <h1 style="color: #181818; font-size: 3rem; line-height: 1.2; margin-bottom: 20px;">
+                        Fini l'enfer d'Excel<br />Retrouvez le plaisir<br>
+                        <span id="dynamic-text" style="color: #079669;">d'organiser</span>
+                    </h1>
+                    <p style="color: #181818; font-size: 1.2rem; margin-bottom: 30px;">
+                        La première plateforme<br />conçue pour les petites associations<br />qui veulent gérer leurs
+                        bénévoles<br />sans devenir des experts en informatique<br />Simple, Humain, Efficace.
+                    </p>
+                    <div class="cta-group" style="display: flex; justify-content: flex-end; gap: 15px;">
+                        <a href="#contact" class="btn btn-primary">Je veux tester</a>
+                        <a href="#demo" class="btn btn-primary">Voir la vidéo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,15 +90,18 @@
                         <div class="slide-text">
                             <span class="badge">Pour l'Association</span>
                             <h3>Créez un planning en 3 clics</h3>
-                            <p>Oubliez les configurations techniques. Créez l'événement, définissez les besoins et envoyez le lien. Visualisez en temps réel qui fait quoi grâce à un code couleur simple.</p>
+                            <p>Oubliez les configurations techniques. Créez l'événement, définissez les besoins et
+                                envoyez le lien. Visualisez en temps réel qui fait quoi grâce à un code couleur simple.
+                            </p>
                             <ul class="check-list">
-                                <li>✅ Gain de temps immédiat</li>
-                                <li>✅ Visibilité totale sur l'événement</li>
+                                <li>Gain de temps immédiat</li>
+                                <li>Visibilité totale sur l'événement</li>
                             </ul>
                         </div>
                         <div class="slide-img">
                             <div class="img-placeholder" id="ph-ui-asso">
-                                <p><strong>[Image Nano Banana]</strong><br>Interface Dashboard : Calendrier visuel avec blocs colorés.</p>
+                                <p><strong>[Image Nano Banana]</strong><br>Interface Dashboard : Calendrier visuel avec
+                                    blocs colorés.</p>
                             </div>
                         </div>
                     </div>
@@ -99,17 +110,19 @@
                 <div class="slide">
                     <div class="slide-content">
                         <div class="slide-text">
-                            <span class="badge badge-yellow">Pour le Bénévole</span>
+                            <span class="badge">Pour le Bénévole</span>
                             <h3>Zéro inscription compliquée</h3>
-                            <p>Vos bénévoles reçoivent un lien, choisissent leur créneau sur leur mobile et valident. Pas de mot de passe à retenir. Ils voient même avec qui ils vont travailler !</p>
+                            <p>Vos bénévoles reçoivent un lien, choisissent leur créneau sur leur mobile et valident.
+                                Pas de mot de passe à retenir. Ils voient même avec qui ils vont travailler !</p>
                             <ul class="check-list">
-                                <li>✅ Choix des créneaux par affinité</li>
-                                <li>✅ Accès mobile instantané</li>
+                                <li>Choix des créneaux par affinité</li>
+                                <li>Accès mobile instantané</li>
                             </ul>
                         </div>
                         <div class="slide-img">
                             <div class="img-placeholder" id="ph-ui-volunteer">
-                                <p><strong>[Image Nano Banana]</strong><br>Vue Smartphone : Interface joyeuse, bouton "Je participe".</p>
+                                <p><strong>[Image Nano Banana]</strong><br>Vue Smartphone : Interface joyeuse, bouton
+                                    "Je participe".</p>
                             </div>
                         </div>
                     </div>
@@ -128,8 +141,9 @@
             <div class="video-text">
                 <h2>Voyez la simplicité en action</h2>
                 <p class="lead">Pas besoin d'être un pro de l'informatique.</p>
-                <p>En moins d'une minute, découvrez comment nous transformons des heures de gestion administrative en quelques clics sereins. Nous remettons l'humain au centre, et la technique au placard.</p>
-                <p><em>Regardez comment créer votre premier événement 👇</em></p>
+                <p>En moins d'une minute, découvrez comment nous transformons des heures de gestion administrative en
+                    quelques clics sereins. Nous remettons l'humain au centre, et la technique au placard.</p>
+                <p><em>Regardez comment créer votre premier événement</em></p>
             </div>
             <div class="video-wrapper">
                 <div class="video-placeholder">
@@ -144,9 +158,8 @@
         <div class="container">
             <div class="section-header">
                 <h2>L'application en images</h2>
-                <p>Une interface épurée, chaleureuse et pensée pour tous.</p>
             </div>
-            
+
             <div class="gallery-wrapper">
                 <button class="gallery-arrow prev-btn" id="galPrevBtn">
                     <i class="ph-caret-left-bold"></i>
@@ -154,7 +167,7 @@
 
                 <div class="gallery-track-container">
                     <ul class="gallery-track" id="galleryTrack">
-                        
+
                         <li class="gallery-slide">
                             <div class="screenshot-container">
                                 <div class="img-placeholder landscape-placeholder">
@@ -198,8 +211,6 @@
                     <i class="ph-caret-right-bold"></i>
                 </button>
             </div>
-            
-            <div class="gallery-counter" id="galleryCounter">1 / 4</div>
         </div>
     </section>
 
@@ -209,7 +220,7 @@
                 <h2>Nos premiers retours</h2>
                 <p>Ils ont testé l'approche et partagé leurs besoins.</p>
             </div>
-            
+
             <div class="carousel-wrapper">
                 <button class="carousel-arrow prev-btn" id="prevBtn">
                     <i class="ph-caret-left-bold"></i>
@@ -217,11 +228,12 @@
 
                 <div class="carousel-track-container">
                     <ul class="carousel-track" id="track">
-                        
+
                         <li class="carousel-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon">“</div>
-                                <p>Je gère mon asso comme une entreprise, mais Excel montrait ses limites. Cet outil m'apporte enfin la rigueur qui nous manquait.</p>
+                                <p>Je gère mon asso comme une entreprise, mais Excel montrait ses limites. Cet outil
+                                    m'apporte enfin la rigueur qui nous manquait.</p>
                                 <div class="author">
                                     <strong>Dominique</strong>
                                     <span>Présidente d'Association</span>
@@ -232,7 +244,8 @@
                         <li class="carousel-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon">“</div>
-                                <p>On est des vieux de la vieille, on se méfie des gadgets. Mais là, ça va droit au but. Pas de QR codes compliqués, c'est simple.</p>
+                                <p>On est des vieux de la vieille, on se méfie des gadgets. Mais là, ça va droit au but.
+                                    Pas de QR codes compliqués, c'est simple.</p>
                                 <div class="author">
                                     <strong>Martine</strong>
                                     <span>Secrétaire & Organisatrice</span>
@@ -243,7 +256,8 @@
                         <li class="carousel-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon">“</div>
-                                <p>Enfin je peux choisir mes créneaux et voir avec qui je bosse ! Fini la frustration d'être mis au parking tout seul.</p>
+                                <p>Enfin je peux choisir mes créneaux et voir avec qui je bosse ! Fini la frustration
+                                    d'être mis au parking tout seul.</p>
                                 <div class="author">
                                     <strong>Thomas</strong>
                                     <span>Bénévole Festival</span>
@@ -254,7 +268,8 @@
                         <li class="carousel-slide">
                             <div class="testimonial-card">
                                 <div class="quote-icon">“</div>
-                                <p>Le plus gros problème, c'est de savoir qui est où quand il y a un imprévu. Gérer les retards automatiquement, c'est un game-changer.</p>
+                                <p>Le plus gros problème, c'est de savoir qui est où quand il y a un imprévu. Gérer les
+                                    retards automatiquement, c'est un game-changer.</p>
                                 <div class="author">
                                     <strong>Julien</strong>
                                     <span>Coordinateur Technique</span>
@@ -262,7 +277,7 @@
                             </div>
                         </li>
 
-                        </ul>
+                    </ul>
                 </div>
 
                 <button class="carousel-arrow next-btn" id="nextBtn">
@@ -278,7 +293,8 @@
         <div class="container cta-box">
             <h2>Prêt à simplifier votre prochain événement ?</h2>
             <p>Rejoignez les associations qui passent à la vitesse supérieure.</p>
-            <form class="signup-form" onsubmit="event.preventDefault(); alert('Merci ! Votre intérêt est enregistré.');">
+            <form class="signup-form"
+                onsubmit="event.preventDefault(); alert('Merci ! Votre intérêt est enregistré.');">
                 <input type="email" placeholder="Votre email responsable asso" required>
                 <button type="submit" class="btn btn-primary">Me tenir informé(e)</button>
             </form>
@@ -295,4 +311,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
