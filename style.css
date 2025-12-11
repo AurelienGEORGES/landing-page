@@ -130,7 +130,7 @@ ul {
     max-width: 900px;
     height: 600px;
     margin: 0 auto;
-    background: url('Gemini_Generated_Image_ivc9t3ivc9t3ivc9.png') no-repeat center top;
+    background: url('assets/Gemini_Generated_Image_ivc9t3ivc9t3ivc9.png') no-repeat center top;
     background-size: cover;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -524,17 +524,14 @@ footer {
 /* PLACEHOLDERS GÉNÉRIQUES */
 .img-placeholder {
     width: 100%;
-    height: 350px;
-    background-color: #E0E0E0;
-    border: 2px dashed #BDBDBD;
-    border-radius: var(--radius);
+    height: 400px;
+    background-color: var(--secondary-green);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     text-align: center;
     color: #757575;
-    background-image: repeating-linear-gradient(45deg, #eee 0, #eee 10px, #fff 10px, #fff 20px);
 }
 
 /* PROBLEM SECTION */
