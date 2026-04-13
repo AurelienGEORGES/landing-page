@@ -18,7 +18,10 @@
     <meta property="og:url" content="https://aureliengeorges.github.io/landing-page/">
     <meta property="og:title" content="BNEVO">
     <meta property="og:description" content="BNEVO, l'engagement sans faux bond.">
+
     <meta property="og:image" content="https://aureliengeorges.github.io/landing-page/assets/image.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1000">
 
     <meta name="theme-color" content="#079669">
 
@@ -349,22 +352,25 @@
                         <input type="checkbox" id="pricing-checkbox">
                         <span class="slider round"></span>
                     </label>
-                    <span>Annuel <span class="save-badge">-20%</span></span>
+                    <span>Annuel <span class="save-badge">-16%</span></span>
                 </div>
             </div>
             <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Essai</h3>
+                <div class="pricing-card featured">
+                    <h3 style="color: #079669;"><b>OFFRE DECOUVERTE</b></h3>
+                    <p class="price-subtitle">(100% gratuit)</p>
                     <div class="price">0€</div>
-                    <p class="price-subtitle">Idéal pour tester</p>
+                    <h2 class="price-subtitle">Testez l'efficacité BNEVO sur vos petits événements</h2>
                     <ul class="pricing-features">
-                        <li><i class="ph-check-circle"></i> 1 Événement test</li>
-                        <li><i class="ph-check-circle"></i> Jusqu'à 10 bénévoles</li>
-                        <li><i class="ph-check-circle"></i> Support par email</li>
+                        <li><i class="ph-check-circle"></i>Planning Interactif : Créez vos événements et missions facilement.</li>
+                        <li><i class="ph-check-circle"></i>Alerte Anti-Surprise : Notification dès qu'un bénévole a un imprévu.</li>
+                        <li><i class="ph-check-circle"></i>Démarche Auto Mail : Démarcharge automatique de la base bénévoles de BNEVO par mail lors d'un désistement.</li>
+                        <li><i class="ph-warning-circle-fill"></i>Limite de l'offre : Maximum 10 bénévoles contactés.</li>
+                        <li><i class="ph-warning-circle-fill"></i>Limite de l'offre : Maximum 5 évènements par an.</li>
                     </ul>
                     <a href="#contact" class="btn btn-border">Commencer</a>
                 </div>
-                <div class="pricing-card">
+                <!-- <div class="pricing-card">
                     <div class="popular-tag">Promotion</div>
                     <h3>Essentiel</h3>
                     <div class="price-container">
@@ -379,17 +385,19 @@
                         <li><i class="ph-check-circle"></i> Support prioritaire</li>
                     </ul>
                     <a href="#contact" class="btn btn-border">Choisir Essentiel</a>
-                </div>
+                </div> -->
                 <div class="pricing-card featured">
-                    <div class="popular-tag">Conseillé</div>
-                    <h3>Premium</h3>
-                    <div class="price" id="premium-price">19.90€</div>
-                    <p class="price-subtitle" id="premium-period">par mois / sans engagement</p>
+                    <h3 style="color: #079669;"><b>OFFRE PREMIUM</b></h3>
+                    <p class="price-subtitle">&nbsp;</p>
+                    <div class="price-container">
+                        <div class="price" id="premium-price">19.90€</div>
+                    </div>
+                    <h2 class="price-subtitle">La securité absolue pour vos gros événements et une diffusion massive</h2>
                     <ul class="pricing-features">
-                        <li><i class="ph-check-circle"></i> Événements illimités</li>
-                        <li><i class="ph-check-circle"></i> Bénévoles illimités</li>
-                        <li><i class="ph-check-circle"></i> Export Excel & Statistiques</li>
-                        <li><i class="ph-check-circle"></i> Rappels SMS auto.</li>
+                        <li><i class="ph-check-circle"></i>Toutes les fonctions de l'Offre Découverte</li>
+                        <li><i class="ph-check-circle"></i>Evénements Illimités</li>
+                        <li><i class="ph-check-circle"></i>Démarchage Illimité Mail + SMS</li>
+                        <li><i class="ph-check-circle"></i>Dashboard & Statistiques : Accédez à un tableau de bord complet pour piloter et analyser les données de vos événements</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary">Passer au Premium</a>
                 </div>
@@ -551,17 +559,95 @@
         </div>
     </section>
 
-    <section id="contact" class="section-cta">
+    <!-- <section id="contact" class="section-cta">
         <div class="container cta-box">
             <h2>Prêt à simplifier votre prochain événement ?</h2>
             <p>Rejoignez les associations qui passent à la vitesse supérieure.</p>
-            <form class="signup-form">
-                <input type="email" placeholder="Votre email responsable asso">
-                <a class="btn btn-primary">Me tenir informé(e)</a>
+            <form class="signup-form" action="https://formspree.io/f/xvzveldq" method="POST">
+                <label for="email-input" class="sr-only">Email</label>
+                <input type="email" id="email-input" name="email" placeholder="responsable@bnevo.com" required>
+                <button type="submit" class="btn btn-primary">
+                    Me tenir informé(e)
+                </button>
             </form>
             <p class="small-print">Pas de spam. Juste de l'entraide.</p>
+            <a href="assets/dossier-presentation-bnevo.pdf" rel="noopener noreferrer"
+                aria-label="Télécharger la présentation PDF de Bnevo" class="btn btn-primary">
+                Télécharger la présentation (PDF)
+            </a>
         </div>
     </section>
+
+    <section class="signup-section">
+        <div class="container">
+            <h3>Recevoir la présentation complète</h3>
+            <p>Entrez votre email pour recevoir instantanément le dossier Bnevo (PDF) dans votre boîte mail.</p>
+
+            <form class="signup-form" id="contactForm" action="send_mail.php" method="POST">
+                <div class="input-group">
+                    <label for="user-email" class="sr-only">Votre email professionnel</label>
+                    <i class="ph-bold ph-envelope-simple"></i>
+                    <input type="email" id="user-email" name="email" placeholder="asso@votre-domaine.com" required
+                        aria-required="true">
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-primary">
+                    <span class="btn-text">M'envoyer le dossier</span>
+                    <i class="ph-bold ph-paper-plane-tilt"></i>
+                </button>
+            </form>
+
+            <div id="formResponse" class="form-feedback"></div>
+        </div>
+    </section> -->
+
+    <!-- <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Parlons de votre association</h2>
+            <p>Une question ? Un besoin spécifique ? Notre équipe vous répond sous 24h.</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="full-name">Nom complet</label>
+                        <input type="text" id="full-name" name="name" placeholder="Jean Dupont" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email responsable</label>
+                        <input type="email" id="email" name="email" placeholder="jean@monasso.fr" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="asso-name">Nom de l'association</label>
+                        <input type="text" id="asso-name" name="association" placeholder="Sport & Co" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="asso-type">Type de structure</label>
+                        <select id="asso-type" name="type">
+                            <option value="sport">Sportive</option>
+                            <option value="culture">Culturelle</option>
+                            <option value="social">Sociale / Caritative</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"
+                        required></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-primary">
+                    Envoyer ma demande <i class="ph-bold ph-paper-plane-tilt"></i>
+                </button>
+
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section> -->
 
     <footer>
         <div class="container footer-content">

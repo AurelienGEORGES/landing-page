@@ -299,29 +299,16 @@ if (restartBtn) {
 
 const pricingCheckbox = document.getElementById('pricing-checkbox');
 
-// Éléments Essentiel
-const essentielPrice = document.getElementById('essentiel-price');
-const essentielPeriod = document.getElementById('essentiel-period');
-
 // Éléments Premium
 const premiumPrice = document.getElementById('premium-price');
-const premiumPeriod = document.getElementById('premium-period');
 
 pricingCheckbox.addEventListener('change', function() {
     if (this.checked) {
         // --- MODE ANNUEL ---
-        essentielPrice.textContent = "99.90€";
-        essentielPeriod.textContent = "par an / environ 8.30€ par mois";
-
         premiumPrice.textContent = "199.90€";
-        premiumPeriod.textContent = "par an / soit environ 16€ par mois";
     } else {
         // --- MODE MENSUEL ---
-        essentielPrice.textContent = "9.90€";
-        essentielPeriod.textContent = "par mois / sans engagement";
-
         premiumPrice.textContent = "19.90€";
-        premiumPeriod.textContent = "par mois / sans engagement";
     }
 
     // Animation de "pop" sur les prix
@@ -532,3 +519,18 @@ fullScreenBtn.addEventListener('click', () => {
     }
 });
 
+// form.addEventListener("submit", async (e) => {
+//     e.preventDefault();
+//     const data = new FormData(e.target);
+
+//     // On pointe vers ton nouveau fichier PHP
+//     const response = await fetch("send_mail.php", {
+//         method: "POST",
+//         body: data
+//     });
+
+//     const result = await response.json();
+//     if (result.status === "success") {
+//         button.textContent = "Vérifiez votre boîte mail ! ✨";
+//     }
+// });
