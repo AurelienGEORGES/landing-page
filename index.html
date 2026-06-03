@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>BNEVO</title>
+    <title>BNEVO - L'engagement sans faux bond</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -18,7 +16,6 @@
     <meta property="og:url" content="https://aureliengeorges.github.io/landing-page/">
     <meta property="og:title" content="BNEVO">
     <meta property="og:description" content="BNEVO, l'engagement sans faux bond.">
-
     <meta property="og:image" content="https://aureliengeorges.github.io/landing-page/assets/image.png">
     <meta property="og:image:width" content="1000">
     <meta property="og:image:height" content="1000">
@@ -34,11 +31,11 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navigation principale">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#hero-section" class="logo-link">
-                    <img src="assets/image.png" alt="Logo BNEVO" style="width:60px; height:auto;" />
+                <a href="#hero-section" class="logo-link" aria-label="BNEVO - Retour à l'accueil">
+                    <img src="assets/image.png" alt="Logo BNEVO" width="60" height="60" />
                     <p class="logo-text">BNEVO</p>
                 </a>
             </div>
@@ -46,613 +43,536 @@
                 <li><a href="#solution">Notre Solution Digitale</a></li>
                 <li><a href="#pricing">Tarif</a></li>
             </ul>
-            <a href="https://mdgav82.github.io/BNEVO/" class="btn btn-border">Essayer l'application</a>
+            <a href="https://mdgav82.github.io/BNEVO/" class="btn btn-border"
+                aria-label="Essayer l'application BNEVO (s'ouvre dans un nouvel onglet)">Essayer l'application</a>
         </div>
     </nav>
+
     <header class="hero-header" id="hero-section">
         <div class="scroll-tunnel">
             <div class="sticky-container">
                 <div class="container hero-content-top" id="hero-text">
-                    <h1>Retrouvez le plaisir :<br /><span id="dynamic-text">d'organiser</span></h1>
+                    <h1>Retrouvez le plaisir<br /><span id="dynamic-text" aria-live="polite">d'organiser</span></h1>
                     <div class="cta-group-center">
-                        <a href="#demo" class="btn btn-primary">Démonstration vidéo</a>
+                        <a href="#demo" class="btn btn-primary"
+                            aria-label="Regarder la démonstration vidéo">Démonstration vidéo</a>
                     </div>
                 </div>
                 <div class="iphone-main-container">
-                    <img src="assets/LEAN-iPhone_Mockup_Hero_modifie.png" class="iphone-base" alt="iPhone BNEVO">
-                    <div class="overlay-left-img" id="img-1"><img src="assets/screens/Capture d'écran 2026-04-15 052538.png" alt="Etape 1"
-                            width="350px" height="auto"></div>
-                    <div class="overlay-right-img" id="img-2"><img src="assets/screens/Capture d'écran 2026-04-15 052720.png" alt="Etape 2"
-                            width="350px" height="auto"></div>
-                    <div class="overlay-left-img" id="img-3"><img src="assets/screens/Capture d'écran 2026-04-15 052828.png" alt="Etape 3"
-                            width="350px" height="auto"></div>
-                    <!-- <div class="overlay-right-img" id="img-4"><img src="assets/image_4_scroll.png" alt="Etape 4"
-                            width="250px" height="auto"></div> -->
+                    <img src="assets/LEAN-iPhone_Mockup_Hero_modifie.png" class="iphone-base"
+                        alt="iPhone affichant l'application BNEVO" width="400" height="800">
+                    <div class="overlay-left-img" id="img-1">
+                        <img src="assets/screens/Capture d'écran 2026-04-15 052538.png"
+                            alt="Étape 1 de la configuration sur l'application" width="350" height="757">
+                    </div>
+                    <div class="overlay-right-img" id="img-2">
+                        <img src="assets/screens/Capture d'écran 2026-04-15 052720.png"
+                            alt="Étape 2 de la configuration sur l'application" width="350" height="757">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <section id="avantages" class="section-advantages">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vous vous reconnaissez ?</h2>
-                <p>Nous savons que gérer une asso, c'est souvent gérer l'imprévu.</p>
-            </div>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="ph-file-xls ph-1x"></i></div>
-                    <h3>Cauchemar des plannings</h3>
-                    <p>Gérer les disponibilités sur des tableaux Excel interminables qui ne sont jamais à jour.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="ph-paper-plane-tilt ph-1x"></i></div>
-                    <h3>Les chaînes d'emails</h3>
-                    <p>Envoyer 50 mails pour une confirmation, et perdre l'info importante dans le fil.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon"><i class="ph-plugs-connected ph-1x"></i></div>
-                    <h3>Trop complexe</h3>
-                    <p>Les logiciels existants sont des "usines à gaz" trop chères pour votre structure.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="solution" class="section-solution">
-        <div class="container">
-            <div class="section-header">
-                <h2>L'essentiel, rien que l'essentiel</h2>
-                <p>Nous avons supprimé le superflu pour garder ce qui vous aide vraiment.</p>
-            </div>
-            <div class="slider-container">
-                <div class="slide active-slide">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <span class="badge">Pour l'Association</span>
-                            <h3>Créez un planning en 3 clics</h3>
-                            <p>Oubliez les configurations techniques. Créez l'événement, définissez les besoins et
-                                envoyez le lien. Visualisez en temps réel qui fait quoi grâce à un code couleur simple.
-                            </p>
-                            <div class="slider-controls">
-                                <button class="slider-btn active" onclick="currentSlide(1)">Côté Organisateur</button>
-                                <button class="slider-btn" onclick="currentSlide(2)">Côté Bénévole</button>
-                            </div>
-                        </div>
-                        <div class="slide-img">
-                            <img src="assets/screens/Capture d'écran 2026-04-15 052538.png" height="500px" />
-                        </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="slide-text">
-                            <span class="badge">Pour le Bénévole</span>
-                            <h3>Zéro inscription compliquée</h3>
-                            <p>Vos bénévoles reçoivent un lien, choisissent leur créneau sur leur mobile et valident.
-                                Pas de mot de passe à retenir. Ils voient même avec qui ils vont travailler !</p>
-                            <div class="slider-controls">
-                                <button class="slider-btn" onclick="currentSlide(1)">Côté Organisateur</button>
-                                <button class="slider-btn active" onclick="currentSlide(2)">Côté Bénévole</button>
-                            </div>
-                        </div>
-                        <div class="slide-img">
-                            <img src="assets/screens/Capture d'écran 2026-04-15 052911.png" height="500px" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="demo" class="section-video">
-        <div class="container video-container-flex">
-            <div class="video-text">
-                <h2>Voyez la simplicité en action</h2>
-                <p>Découvrez comment nous transformons des heures de gestion administrative en quelques clics sereins.
-                    Nous remettons l'humain au centre, et la technique au placard.</p>
-            </div>
-            <div class="video-wrapper">
-                <div class="custom-video-container" id="videoPlayer">
 
-                    <div class="custom-video-container" id="videoPlayer" role="region" aria-label="Lecteur vidéo Bnevo">
+    <main>
+        <section id="avantages" class="section-advantages" aria-labelledby="advantages-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="advantages-title">Vous vous reconnaissez ?</h2>
+                    <p>Nous savons que gérer une asso, c'est souvent gérer l'imprévu.</p>
+                </div>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon" aria-hidden="true"><i class="ph-file-xls ph-1x"></i></div>
+                        <h3>Cauchemar des plannings</h3>
+                        <p>Gérer les disponibilités sur des tableaux Excel interminables qui ne sont jamais à jour.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon" aria-hidden="true"><i class="ph-paper-plane-tilt ph-1x"></i></div>
+                        <h3>Les chaînes d'emails</h3>
+                        <p>Envoyer 50 mails pour une confirmation, et perdre l'info importante dans le fil.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon" aria-hidden="true"><i class="ph-plugs-connected ph-1x"></i></div>
+                        <h3>Trop complexe</h3>
+                        <p>Les logiciels existants sont des "usines à gaz" trop chères pour votre structure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" class="section-solution" aria-labelledby="solution-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="solution-title">L'essentiel, rien que l'essentiel</h2>
+                    <p>Nous avons supprimé le superflu pour garder ce qui vous aide vraiment.</p>
+                </div>
+                <div class="slider-container" role="region" aria-label="Présentation des fonctionnalités">
+                    <div class="slide active-slide" role="group" aria-label="Aperçu pour l'association">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <span class="badge">Pour l'Association</span>
+                                <h3>Créez un planning en 3 clics</h3>
+                                <p>Oubliez les configurations techniques. Créez l'événement, définissez les besoins et
+                                    envoyez le lien. Visualisez en temps réel qui fait quoi grâce à un code couleur
+                                    simple.</p>
+                                <div class="slider-controls" role="group" aria-label="Contrôles de l'aperçu">
+                                    <button class="slider-btn active" onclick="currentSlide(1)"
+                                        aria-label="Afficher la vue Organisateur" aria-pressed="true">Côté
+                                        Organisateur</button>
+                                    <button class="slider-btn" onclick="currentSlide(2)"
+                                        aria-label="Afficher la vue Bénévole" aria-pressed="false">Côté
+                                        Bénévole</button>
+                                </div>
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/screens/Capture d'écran 2026-04-15 052538.png"
+                                    alt="Interface de création de planning côté organisateur" width="350"
+                                    height="757" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" role="group" aria-label="Aperçu pour le bénévole">
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <span class="badge">Pour le Bénévole</span>
+                                <h3>Zéro inscription compliquée</h3>
+                                <p>Vos bénévoles reçoivent un lien, choisissent leur créneau sur leur mobile et
+                                    valident. Pas de mot de passe à retenir. Ils voient même avec qui ils vont
+                                    travailler !</p>
+                                <div class="slider-controls" role="group" aria-label="Contrôles de l'aperçu">
+                                    <button class="slider-btn" onclick="currentSlide(1)"
+                                        aria-label="Afficher la vue Organisateur" aria-pressed="false">Côté
+                                        Organisateur</button>
+                                    <button class="slider-btn active" onclick="currentSlide(2)"
+                                        aria-label="Afficher la vue Bénévole" aria-pressed="true">Côté Bénévole</button>
+                                </div>
+                            </div>
+                            <div class="slide-img">
+                                <img src="assets/screens/Capture d'écran 2026-04-15 052911.png"
+                                    alt="Interface d'inscription simplifiée sur mobile côté bénévole" width="350"
+                                    height="757" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="section-video" aria-labelledby="demo-title">
+            <div class="container video-container-flex">
+                <div class="video-text">
+                    <h2 id="demo-title">Voyez la simplicité en action</h2>
+                    <p>Découvrez comment nous transformons des heures de gestion administrative en quelques clics
+                        sereins. Nous remettons l'humain au centre, et la technique au placard.</p>
+                </div>
+                <div class="video-wrapper">
+                    <div class="custom-video-container" id="videoPlayer" role="region"
+                        aria-label="Lecteur vidéo de démonstration Bnevo">
                         <video id="mainVideo" class="video-element" preload="metadata" playsinline webkit-playsinline
                             muted>
-                            <source src="assets/LEAN-Publicité 1.mp4" type="video/mp4">
+                            <!-- <source src="assets/LEAN-Publicité 1.mp4" type="video/mp4"> -->
                         </video>
 
                         <div class="video-overlay" id="videoOverlay" aria-hidden="true">
                             <div class="play-button-large">▶</div>
                         </div>
 
-                        <div class="video-controls" role="group" aria-label="Contrôles de lecture">
+                        <div class="video-controls" role="group" aria-label="Contrôles du lecteur vidéo">
                             <div class="controls-main">
-
-                                <button class="control-btn" id="fullScreenBtn" aria-label="Plein écran">
-                                    <i class="ph-bold ph-corners-out"></i>
+                                <button class="control-btn" id="fullScreenBtn" aria-label="Basculer le plein écran">
+                                    <i class="ph-bold ph-corners-out" aria-hidden="true"></i>
                                 </button>
 
-                                <button class="control-btn" id="playPauseBtn" aria-label="Play/Pause">
-                                    <i class="ph-fill ph-play"></i>
+                                <button class="control-btn" id="playPauseBtn" aria-label="Lecture / Pause">
+                                    <i class="ph-fill ph-play" aria-hidden="true"></i>
                                 </button>
 
-                                <div class="progress-area" id="progressArea">
+                                <div class="progress-area" id="progressArea" role="slider"
+                                    aria-label="Barre de progression de la vidéo" aria-valuemin="0" aria-valuemax="100"
+                                    aria-valuenow="0">
                                     <div class="progress-bar-container">
                                         <div class="progress-bar" id="progressBar"></div>
                                     </div>
                                 </div>
 
-                                <button class="control-btn" id="restartBtn" title="Relancer du début">
-                                    <i class="ph-bold ph-arrow-counter-clockwise"></i>
+                                <button class="control-btn" id="restartBtn"
+                                    aria-label="Relancer la vidéo depuis le début">
+                                    <i class="ph-bold ph-arrow-counter-clockwise" aria-hidden="true"></i>
                                 </button>
 
                                 <div class="volume-container">
-                                    <button class="control-btn" id="muteBtn" aria-label="Muter">
-                                        <i class="ph-bold ph-speaker-high"></i>
+                                    <button class="control-btn" id="muteBtn" aria-label="Couper ou activer le son">
+                                        <i class="ph-bold ph-speaker-high" aria-hidden="true"></i>
                                     </button>
                                     <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1"
-                                        step="0.1" value="1">
+                                        step="0.1" value="1" aria-label="Régler le volume sonore">
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="galerie" class="section-gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>L'application en images</h2>
-            </div>
-            <div class="gallery-wrapper">
-                <button class="gallery-arrow prev-btn" id="galPrevBtn">
-                    <i class="ph-caret-left-bold"></i>
-                </button>
-                <div class="gallery-track-container">
-                    <ul class="gallery-track" id="galleryTrack">
-                        <li class="gallery-slide">
-                            <div class="screenshot-container">
-                                <img src="assets/slider/Capture d'écran 2026-04-15 054539.png"
-                                    style="width:350px; height:auto;">
-                            </div>
-                        </li>
-                        <li class="gallery-slide">
-                            <div class="screenshot-container">
-                                <img src="assets/slider/Capture d'écran 2026-04-15 054554.png"
-                                    style="width:400px; height:auto;">
-                            </div>
-                        </li>
-                        <li class="gallery-slide">
-                            <div class="screenshot-container">
-                                <img src="assets/slider/Capture d'écran 2026-04-15 054606.png"
-                                    style="width:400px; height:auto;">
-                            </div>
-                        </li>
-                        <li class="gallery-slide">
-                            <div class="screenshot-container">
-                                <img src="assets/slider/Capture d'écran 2026-04-15 054632.png"
-                                    style="width:400px; height:auto;">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <button class="gallery-arrow next-btn" id="galNextBtn">
-                    <i class="ph-caret-right-bold"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-    <section id="features-table" class="section-features-table">
-        <div class="container">
-            <div class="section-header">
-                <h2>Pourquoi choisir BNEVO ?</h2>
-                <p>Comparez l'efficacité de notre solution digitale face aux méthodes traditionnelles.</p>
-            </div>
-            <div class="table-wrapper">
-                <table class="bnevo-table">
-                    <thead>
-                        <tr>
-                            <th>Fonctionnalités & Avantages</th>
-                            <th>Méthode Classique (Excel/Mail)</th>
-                            <th class="col-highlight">Solution BNEVO</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-link"></i>
-                                    <div>
-                                        <strong>Accès Bénévoles</strong>
-                                        <span class="row-details">Lien magique sans inscription</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Mots de passe & Comptes</td>
-                            <td class="status-yes">✓ Instantané</td>
-                        </tr>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-bell-ringing"></i>
-                                    <div>
-                                        <strong>Gestion des désistements</strong>
-                                        <span class="row-details">Relances auto sur listes de secours</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Appels paniqués</td>
-                            <td class="status-yes">✓ Automatisé</td>
-                        </tr>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-layout"></i>
-                                    <div>
-                                        <strong>Templates d'événements</strong>
-                                        <span class="row-details">Modèles AG, Festivals, Buvettes</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Copier/Coller manuel</td>
-                            <td class="status-yes">✓ 1 Clic (Bientôt)</td>
-                        </tr>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-users-four"></i>
-                                    <div>
-                                        <strong>Matching Disponibilités</strong>
-                                        <span class="row-details">Assignation selon les envies</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Puzzle mental</td>
-                            <td class="status-yes">✓ Intelligent (Bientôt)</td>
-                        </tr>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-projector-screen-chart"></i>
-                                    <div>
-                                        <strong>Gestion de projet & Stocks</strong>
-                                        <span class="row-details">Pilotage complet de l'asso</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Outils multiples</td>
-                            <td class="status-yes">✓ Intégré (Bientôt)</td>
-                        </tr>
-                        <tr class="collapsible-row">
-                            <td>
-                                <div class="feat-cell">
-                                    <i class="ph-share-network"></i>
-                                    <div>
-                                        <strong>Connexion Réseaux Sociaux</strong>
-                                        <span class="row-details">Recrutement multi-canal</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="status-no">Partage manuel</td>
-                            <td class="status-yes">✓ Natif (Bientôt)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-    <section id="pricing" class="section-pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Un tarif simple, comme l'outil</h2>
-                <p>Essayez gratuitement, passez au niveau supérieur quand vous êtes prêt.</p>
+        </section>
 
-                <div class="pricing-toggle">
-                    <span>Mensuel</span>
-                    <label class="switch">
-                        <input type="checkbox" id="pricing-checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                    <span>Annuel <span class="save-badge">-16%</span></span>
+        <section id="galerie" class="section-gallery" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="gallery-title">L'application en images</h2>
                 </div>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card featured">
-                    <h3 style="color: #079669;"><b>OFFRE DECOUVERTE</b></h3>
-                    <p class="price-subtitle">(100% gratuit)</p>
-                    <div class="price">0€</div>
-                    <h2 class="price-subtitle">Testez l'efficacité BNEVO sur vos petits événements</h2>
-                    <ul class="pricing-features">
-                        <li><i class="ph-check-circle"></i>Planning Interactif : Créez vos événements et missions facilement.</li>
-                        <li><i class="ph-check-circle"></i>Alerte Anti-Surprise : Notification dès qu'un bénévole a un imprévu.</li>
-                        <li><i class="ph-check-circle"></i>Démarche Auto Mail : Démarcharge automatique de la base bénévoles de BNEVO par mail lors d'un désistement.</li>
-                        <li><i class="ph-warning-circle-fill"></i>Limite de l'offre : Maximum 10 bénévoles contactés.</li>
-                        <li><i class="ph-warning-circle-fill"></i>Limite de l'offre : Maximum 5 évènements par an.</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-border">Commencer</a>
-                </div>
-                <!-- <div class="pricing-card">
-                    <div class="popular-tag">Promotion</div>
-                    <h3>Essentiel</h3>
-                    <div class="price-container">
-                        <span class="old-price">11.90€</span>
-                        <div class="price" id="essentiel-price">9.90€</div>
-                    </div>
-                    <p class="price-subtitle" id="essentiel-period">par mois / sans engagement</p>
-                    <ul class="pricing-features">
-                        <li><i class="ph-check-circle"></i> 3 Événements / mois</li>
-                        <li><i class="ph-check-circle"></i> Jusqu'à 50 bénévoles</li>
-                        <li><i class="ph-check-circle"></i> Templates de base</li>
-                        <li><i class="ph-check-circle"></i> Support prioritaire</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-border">Choisir Essentiel</a>
-                </div> -->
-                <div class="pricing-card featured">
-                    <h3 style="color: #079669;"><b>OFFRE PREMIUM</b></h3>
-                    <p class="price-subtitle">&nbsp;</p>
-                    <div class="price-container">
-                        <div class="price" id="premium-price">19.90€</div>
-                    </div>
-                    <h2 class="price-subtitle">La securité absolue pour vos gros événements et une diffusion massive</h2>
-                    <ul class="pricing-features">
-                        <li><i class="ph-check-circle"></i>Toutes les fonctions de l'Offre Découverte</li>
-                        <li><i class="ph-check-circle"></i>Evénements Illimités</li>
-                        <li><i class="ph-check-circle"></i>Démarchage Illimité Mail + SMS</li>
-                        <li><i class="ph-check-circle"></i>Dashboard & Statistiques : Accédez à un tableau de bord complet pour piloter et analyser les données de vos événements</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Passer au Premium</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="faq" class="section-faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Questions fréquentes</h2>
-                <p>Tout ce que vous devez savoir pour démarrer sereinement.</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Mes bénévoles doivent-ils créer un compte ?
-                        <i class="ph-caret-down"></i>
+                <div class="gallery-wrapper" role="region" aria-label="Galerie de captures d'écran">
+                    <button class="gallery-arrow prev-btn" id="galPrevBtn" aria-label="Image précédente">
+                        <i class="ph-caret-left-bold" aria-hidden="true"></i>
                     </button>
-                    <div class="faq-answer">
-                        <p>Non, et c'est notre grande force. Vos bénévoles reçoivent un lien magique unique. Ils
-                            choisissent leur créneau, entrent leur nom/prénom, et c'est terminé. Pas de mot de passe à
-                            oublier.</p>
+                    <div class="gallery-track-container">
+                        <ul class="gallery-track" id="galleryTrack">
+                            <li class="gallery-slide">
+                                <div class="screenshot-container">
+                                    <img src="assets/slider/Capture d'écran 2026-04-15 054539.png"
+                                        alt="Aperçu du tableau de bord de gestion d'un événement"
+                                        style="width:350px; height:auto;">
+                                </div>
+                            </li>
+                            <li class="gallery-slide">
+                                <div class="screenshot-container">
+                                    <img src="assets/slider/Capture d'écran 2026-04-15 054554.png"
+                                        alt="Aperçu de la liste des bénévoles assignés"
+                                        style="width:400px; height:auto;">
+                                </div>
+                            </li>
+                            <li class="gallery-slide">
+                                <div class="screenshot-container">
+                                    <img src="assets/slider/Capture d'écran 2026-04-15 054606.png"
+                                        alt="Aperçu de la création d'un nouveau créneau horaire"
+                                        style="width:400px; height:auto;">
+                                </div>
+                            </li>
+                            <li class="gallery-slide">
+                                <div class="screenshot-container">
+                                    <img src="assets/slider/Capture d'écran 2026-04-15 054632.png"
+                                        alt="Aperçu du système de notifications automatisées"
+                                        style="width:400px; height:auto;">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Puis-je tester l'application gratuitement ?
-                        <i class="ph-caret-down"></i>
+                    <button class="gallery-arrow next-btn" id="galNextBtn" aria-label="Image suivante">
+                        <i class="ph-caret-right-bold" aria-hidden="true"></i>
                     </button>
-                    <div class="faq-answer">
-                        <p>Bien sûr ! La version d'essai vous permet de créer un événement complet pour tester toutes
-                            les fonctionnalités avec un petit groupe de bénévoles.</p>
-                    </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Nos données sont-elles sécurisées ?
-                        <i class="ph-caret-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Toutes vos données sont hébergées en Europe et sont cryptées. Nous respectons scrupuleusement
-                            le RGPD et nous ne revendrons jamais vos listes de contacts.</p>
+        <section id="features-table" class="section-features-table" aria-labelledby="table-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="table-title">Pourquoi choisir BNEVO ?</h2>
+                    <p>Comparez l'efficacité de notre solution digitale face aux méthodes traditionnelles.</p>
+                </div>
+                <div class="table-wrapper">
+                    <table class="bnevo-table" aria-label="Tableau comparatif des fonctionnalités">
+                        <thead>
+                            <tr>
+                                <th scope="col">Fonctionnalités & Avantages</th>
+                                <th scope="col">Méthode Classique (Excel/Mail)</th>
+                                <th scope="col" class="col-highlight">Solution BNEVO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-link" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Accès Bénévoles</strong>
+                                            <span class="row-details">Lien magique sans inscription</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Mots de passe & Comptes</td>
+                                <td class="status-yes">✓ Instantané</td>
+                            </tr>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-bell-ringing" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Gestion des désistements</strong>
+                                            <span class="row-details">Relances auto sur listes de secours</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Appels paniqués</td>
+                                <td class="status-yes">✓ Automatisé</td>
+                            </tr>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-layout" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Templates d'événements</strong>
+                                            <span class="row-details">Modèles AG, Festivals, Buvettes</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Copier/Coller manuel</td>
+                                <td class="status-yes">✓ 1 Clic (Bientôt)</td>
+                            </tr>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-users-four" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Matching Disponibilités</strong>
+                                            <span class="row-details">Assignation selon les envies</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Puzzle mental</td>
+                                <td class="status-yes">✓ Intelligent (Bientôt)</td>
+                            </tr>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-projector-screen-chart" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Gestion de projet & Stocks</strong>
+                                            <span class="row-details">Pilotage complet de l'asso</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Outils multiples</td>
+                                <td class="status-yes">✓ Intégré (Bientôt)</td>
+                            </tr>
+                            <tr class="collapsible-row" tabindex="0" aria-expanded="false" role="button">
+                                <td>
+                                    <div class="feat-cell">
+                                        <i class="ph-share-network" aria-hidden="true"></i>
+                                        <div>
+                                            <strong>Connexion Réseaux Sociaux</strong>
+                                            <span class="row-details">Recrutement multi-canal</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="status-no">Partage manuel</td>
+                                <td class="status-yes">✓ Natif (Bientôt)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="pricing-title">Un tarif simple, comme l'outil</h2>
+                    <p>Essayez gratuitement, passez au niveau supérieur quand vous êtes prêt.</p>
+
+                    <div class="pricing-toggle">
+                        <span>Mensuel</span>
+                        <label class="switch">
+                            <input type="checkbox" id="pricing-checkbox"
+                                aria-label="Basculer entre la facturation mensuelle et annuelle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Annuel <span class="save-badge"
+                                aria-label="Réduction de seize pourcent">-16%</span></span>
                     </div>
                 </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card featured">
+                        <h4><b>OFFRE DECOUVERTE</b></h4>
+                        <p class="price-subtitle">(100% gratuit)</p>
+                        <div class="price">0€</div>
+                        <h5>Testez l'efficacité BNEVO sur vos petits événements</h5>
+                        <ul class="pricing-features">
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Planning Interactif : Créez vos
+                                événements et missions facilement.</li>
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Alerte Anti-Surprise : Notification
+                                dès qu'un bénévole a un imprévu.</li>
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Démarche Auto Mail : Démarcharge
+                                automatique de la base bénévoles de BNEVO par mail lors d'un désistement.</li>
+                            <li><i class="ph-warning-circle-fill" aria-hidden="true"></i>Limite de l'offre : Maximum 10
+                                bénévoles contactés.</li>
+                            <li><i class="ph-warning-circle-fill" aria-hidden="true"></i>Limite de l'offre : Maximum 5
+                                évènements par an.</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-border">Commencer</a>
+                    </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">
-                        L'abonnement est-il vraiment sans engagement ?
-                        <i class="ph-caret-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Oui. Pour l'offre mensuelle, vous pouvez arrêter à tout moment d'un simple clic depuis votre
-                            espace administrateur. Aucun préavis n'est requis.</p>
+                    <div class="pricing-card featured">
+                        <h4><b>OFFRE PREMIUM</b></h4>
+                        <p class="price-subtitle">&nbsp;</p>
+                        <div class="price-container">
+                            <div class="price" id="premium-price">19.90€</div>
+                        </div>
+                        <h5>La securité absolue pour vos gros événements et une diffusion massive</h5>
+                        <ul class="pricing-features">
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Toutes les fonctions de l'Offre
+                                Découverte</li>
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Evénements Illimités</li>
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Démarchage Illimité Mail + SMS</li>
+                            <li><i class="ph-check-circle" aria-hidden="true"></i>Dashboard & Statistiques : Accédez à
+                                un tableau de bord complet pour piloter et analyser les données de vos événements</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Passer au Premium</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="retours" class="section-testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nos premiers retours</h2>
-                <p>Ils ont testé l'approche et partagé leurs besoins.</p>
+        </section>
+
+        <section id="faq" class="section-faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="faq-title">Questions fréquentes</h2>
+                    <p>Tout ce que vous devez savoir pour démarrer sereinement.</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Mes bénévoles doivent-ils créer un compte ?
+                            <i class="ph-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Non, et c'est notre grande force. Vos bénévoles reçoivent un lien magique unique. Ils
+                                choisissent leur créneau, entrent leur nom/prénom, et c'est terminé. Pas de mot de passe
+                                à oublier.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Puis-je tester l'application gratuitement ?
+                            <i class="ph-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Bien sûr ! La version d'essai vous permet de créer un événement complet pour tester
+                                toutes les fonctionnalités avec un petit groupe de bénévoles.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Nos données sont-elles sécurisées ?
+                            <i class="ph-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Toutes vos données sont hébergées en Europe et sont cryptées. Nous respectons
+                                scrupuleusement le RGPD et nous ne revendrons jamais vos listes de contacts.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            L'abonnement est-il vraiment sans engagement ?
+                            <i class="ph-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oui. Pour l'offre mensuelle, vous pouvez arrêter à tout moment d'un simple clic depuis
+                                votre espace administrateur. Aucun préavis n'est requis.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="carousel-wrapper">
-                <button class="carousel-arrow prev-btn" id="prevBtn">
-                    <i class="ph-caret-left-bold"></i>
-                </button>
-
-                <div class="carousel-track-container">
-                    <ul class="carousel-track" id="track">
-
-                        <li class="carousel-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <p>"Je gère mon asso comme une entreprise, mais Excel montrait ses limites. Cet
-                                        outil
-                                        m'apporte enfin la rigueur qui nous manquait."</p>
-                                </div>
-                                <div class="author-info">
-                                    <div class="author-avatar">
-                                        <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
-                                            alt="Avatar Dominique">
-                                    </div>
-                                    <div class="author-details">
-                                        <strong>Dominique</strong>
-                                        <span>Présidente d'Association</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="carousel-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <p>"On est des vieux de la vieille, on se méfie des gadgets. Mais là, ça va droit au
-                                        but. Pas de QR codes compliqués, c'est simple."</p>
-                                </div>
-                                <div class="author-info">
-                                    <div class="author-avatar">
-                                        <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
-                                            alt="Avatar Martine">
-                                    </div>
-                                    <div class="author-details">
-                                        <strong>Martine</strong>
-                                        <span>Secrétaire & Organisatrice</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="carousel-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <p>"Enfin je peux choisir mes créneaux et voir avec qui je bosse ! Fini la
-                                        frustration d'être mis au parking tout seul."</p>
-                                </div>
-                                <div class="author-info">
-                                    <div class="author-avatar">
-                                        <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
-                                            alt="Avatar Thomas">
-                                    </div>
-                                    <div class="author-details">
-                                        <strong>Thomas</strong>
-                                        <span>Bénévole Festival</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="carousel-slide">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    <p>"Le plus gros problème, c'est de savoir qui est où quand il y a un imprévu. Gérer
-                                        les retards automatiquement, c'est un game-changer."</p>
-                                </div>
-                                <div class="author-info">
-                                    <div class="author-avatar">
-                                        <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
-                                            alt="Avatar Julien">
-                                    </div>
-                                    <div class="author-details">
-                                        <strong>Julien</strong>
-                                        <span>Coordinateur Technique</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
+        <section id="retours" class="section-testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-title">Nos premiers retours</h2>
+                    <p>Ils ont testé l'approche et partagé leurs besoins.</p>
                 </div>
 
-                <button class="carousel-arrow next-btn" id="nextBtn">
-                    <i class="ph-caret-right-bold"></i>
-                </button>
+                <div class="carousel-wrapper" role="region" aria-label="Carrousel de témoignages">
+                    <button class="carousel-arrow prev-btn" id="prevBtn" aria-label="Témoignage précédent">
+                        <i class="ph-caret-left-bold" aria-hidden="true"></i>
+                    </button>
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track" id="track">
+                            <li class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"Je gère mon asso comme une entreprise, mais Excel montrait ses limites. Cet
+                                            outil m'apporte enfin la rigueur qui nous manquait."</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-avatar">
+                                            <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
+                                                alt="Avatar de Dominique">
+                                        </div>
+                                        <div class="author-details">
+                                            <strong>Dominique</strong>
+                                            <span>Présidente d'Association</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"On est des vieux de la vieille, on se méfie des gadgets. Mais là, ça va
+                                            droit au but. Pas de QR codes compliqués, c'est simple."</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-avatar">
+                                            <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
+                                                alt="Avatar de Martine">
+                                        </div>
+                                        <div class="author-details">
+                                            <strong>Martine</strong>
+                                            <span>Secrétaire & Organisatrice</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"Enfin je peux choisir mes créneaux et voir avec qui je bosse ! Fini la
+                                            frustration d'être mis au parking tout seul."</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-avatar">
+                                            <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
+                                                alt="Avatar de Thomas">
+                                        </div>
+                                        <div class="author-details">
+                                            <strong>Thomas</strong>
+                                            <span>Bénévole Festival</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="carousel-slide">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>"Le plus gros problème, c'est de savoir qui est où quand il y a un imprévu.
+                                            Gérer les retards automatiquement, c'est un game-changer."</p>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-avatar">
+                                            <img src="assets/Gemini_Generated_Image_kcp025kcp025kcp0.png"
+                                                alt="Avatar de Julien">
+                                        </div>
+                                        <div class="author-details">
+                                            <strong>Julien</strong>
+                                            <span>Coordinateur Technique</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-arrow next-btn" id="nextBtn" aria-label="Témoignage suivant">
+                        <i class="ph-caret-right-bold" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- <section id="contact" class="section-cta">
-        <div class="container cta-box">
-            <h2>Prêt à simplifier votre prochain événement ?</h2>
-            <p>Rejoignez les associations qui passent à la vitesse supérieure.</p>
-            <form class="signup-form" action="https://formspree.io/f/xvzveldq" method="POST">
-                <label for="email-input" class="sr-only">Email</label>
-                <input type="email" id="email-input" name="email" placeholder="responsable@bnevo.com" required>
-                <button type="submit" class="btn btn-primary">
-                    Me tenir informé(e)
-                </button>
-            </form>
-            <p class="small-print">Pas de spam. Juste de l'entraide.</p>
-            <a href="assets/dossier-presentation-bnevo.pdf" rel="noopener noreferrer"
-                aria-label="Télécharger la présentation PDF de Bnevo" class="btn btn-primary">
-                Télécharger la présentation (PDF)
-            </a>
-        </div>
-    </section>
-
-    <section class="signup-section">
-        <div class="container">
-            <h3>Recevoir la présentation complète</h3>
-            <p>Entrez votre email pour recevoir instantanément le dossier Bnevo (PDF) dans votre boîte mail.</p>
-
-            <form class="signup-form" id="contactForm" action="send_mail.php" method="POST">
-                <div class="input-group">
-                    <label for="user-email" class="sr-only">Votre email professionnel</label>
-                    <i class="ph-bold ph-envelope-simple"></i>
-                    <input type="email" id="user-email" name="email" placeholder="asso@votre-domaine.com" required
-                        aria-required="true">
-                </div>
-
-                <button type="submit" id="submitBtn" class="btn btn-primary">
-                    <span class="btn-text">M'envoyer le dossier</span>
-                    <i class="ph-bold ph-paper-plane-tilt"></i>
-                </button>
-            </form>
-
-            <div id="formResponse" class="form-feedback"></div>
-        </div>
-    </section> -->
-
-    <!-- <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Parlons de votre association</h2>
-            <p>Une question ? Un besoin spécifique ? Notre équipe vous répond sous 24h.</p>
-
-            <form id="contactForm" class="contact-form">
-                <div class="form-grid">
-                    <div class="input-group">
-                        <label for="full-name">Nom complet</label>
-                        <input type="text" id="full-name" name="name" placeholder="Jean Dupont" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="email">Email responsable</label>
-                        <input type="email" id="email" name="email" placeholder="jean@monasso.fr" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="asso-name">Nom de l'association</label>
-                        <input type="text" id="asso-name" name="association" placeholder="Sport & Co" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="asso-type">Type de structure</label>
-                        <select id="asso-type" name="type">
-                            <option value="sport">Sportive</option>
-                            <option value="culture">Culturelle</option>
-                            <option value="social">Sociale / Caritative</option>
-                            <option value="autre">Autre</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group full-width">
-                    <label for="message">Votre message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"
-                        required></textarea>
-                </div>
-
-                <button type="submit" id="submitBtn" class="btn btn-primary">
-                    Envoyer ma demande <i class="ph-bold ph-paper-plane-tilt"></i>
-                </button>
-
-                <div id="formStatus" class="form-status"></div>
-            </form>
-        </div>
-    </section> -->
+        </section>
+    </main>
 
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/mascotte.png" alt="Logo Benevo" style="width:60px; height:auto;" />
+                    <img src="assets/mascotte.png" alt="Mascotte Benevo" style="width:60px; height:auto;" />
             </div>
             <p>2026 - Fait avec ❤️ pour les associations.</p>
         </div>
